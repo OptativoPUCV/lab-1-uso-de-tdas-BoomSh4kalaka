@@ -58,3 +58,17 @@ exercises.c:141:106: error: cast to pointer from integer of different size [-Wer
 cc1.exe: all warnings being treated as errors
 Compilation failed
 cb63373
+Sat, Mar 22, 2025  3:03:37 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:135:24: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+          char ultimo = top(pila);
+                        ^~~
+exercises.c:136:21: error: comparison between pointer and integer [-Werror]
+          if (ultimo == NULL)
+                     ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c38158b
