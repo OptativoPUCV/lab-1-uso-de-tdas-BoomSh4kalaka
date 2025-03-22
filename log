@@ -35,3 +35,26 @@ Sat, Mar 22, 2025  2:24:30 PM:
  tests:  4|1
 total_score: 50/70
 e1cf2a9
+Sat, Mar 22, 2025  3:00:21 PM: 
+ exercises.c | 20 ++++++++++++++------
+ 1 file changed, 14 insertions(+), 6 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:135:24: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+          char ultimo = top(pila);
+                        ^~~
+exercises.c:136:21: error: comparison between pointer and integer [-Werror]
+          if (ultimo == NULL)
+                     ^~
+exercises.c:141:28: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+          if ((c == ')' && *(char*)ultimo == '(') || (c == ']' && *(char*)ultimo == '[') || (c == '}' && *(char*)ultimo == '{'))
+                            ^
+exercises.c:141:67: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+          if ((c == ')' && *(char*)ultimo == '(') || (c == ']' && *(char*)ultimo == '[') || (c == '}' && *(char*)ultimo == '{'))
+                                                                   ^
+exercises.c:141:106: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+          if ((c == ')' && *(char*)ultimo == '(') || (c == ']' && *(char*)ultimo == '[') || (c == '}' && *(char*)ultimo == '{'))
+                                                                                                          ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+cb63373
