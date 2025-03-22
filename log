@@ -12,3 +12,14 @@ Fri, Mar 21, 2025  4:39:52 PM:
  tests:  4|1
 total_score: 50/70
 c452391
+Sat, Mar 22, 2025  2:22:24 PM: 
+ exercises.c | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:134:14: error: implicit declaration of function 'isEmpty' [-Werror=implicit-function-declaration]
+          if (isEmpty(pila))
+              ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0b6c1df
