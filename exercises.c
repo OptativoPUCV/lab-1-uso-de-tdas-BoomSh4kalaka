@@ -129,7 +129,7 @@ int parentesisBalanceados(char *cadena) {
       char caracter = cadena[i];
       if (caracter == '(' || caracter == '[' || caracter == '{')
       {
-         push(P, caracter);
+         push(P, &caracter);
       }
       else if (caracter == ')' || caracter == ']' || caracter == '}')
       {
@@ -137,8 +137,8 @@ int parentesisBalanceados(char *cadena) {
          {
             return 0;
          }
-         char topCaracter = top(P);
-         if ((caracter == ')' && topCaracter != '(') || (caracter == '}' && topCaracter != '{') || (caracter == ']' && topCaracter != '['))
+         void *topCaracter = top(P);
+         if ((caracter == ')' && *(char *)topCaracter != '(') || (caracter == '}' && *(char *)topCaracter != '{') || (caracter == ']' && *(char *)topCaracter != '['))
          {
             return 0;
          }
