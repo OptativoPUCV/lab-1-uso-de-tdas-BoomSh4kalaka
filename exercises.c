@@ -58,7 +58,7 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
-   int suma = 1;
+   int suma = 0;
    int *aux = first(L);
    while (aux != NULL)
    {
@@ -139,8 +139,9 @@ int parentesisBalanceados(char *cadena) {
          {
             return 0;
          }
-         void *topCaracter = top(P);
-         if ((caracter == ')' && *(char *)topCaracter != '(') || (caracter == '}' && *(char *)topCaracter != '{') || (caracter == ']' && *(char *)topCaracter != '['))
+         void *topAux = top(P);
+         char topCaracter = *(char *)topAux;
+         if ((caracter == ')' && topCaracter != '(') || (caracter == '}' && topCaracter != '{') || (caracter == ']' && topCaracter != '['))
          {
             return 0;
          }
