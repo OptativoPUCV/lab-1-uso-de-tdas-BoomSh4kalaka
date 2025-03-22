@@ -58,7 +58,7 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
-   int suma = 0;
+   int suma = 1;
    int *aux = first(L);
    while (aux != NULL)
    {
@@ -122,7 +122,7 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-   
+
    return 0;
 }
 
